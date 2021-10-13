@@ -1,0 +1,37 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
+    <Authors></Authors>
+    <Company></Company>
+    <Version>8.1.0</Version>
+    <AssemblyVersion>8.1.0</AssemblyVersion>
+    <FileVersion>8.1.0</FileVersion>
+    <PackageProjectUrl>https://github.com/Shiroechi/Z.PagedList/</PackageProjectUrl>
+    <RepositoryType>git</RepositoryType>
+    <RepositoryUrl>https://github.com/Shiroechi/Z.PagedList.git</RepositoryUrl>
+    <Description>Fork from X.PagedList without JetBrains Annotations</Description>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <AssemblyName>Z.PagedList</AssemblyName>
+    <RootNamespace>Z.PagedList</RootNamespace>
+    <PackageId>Z.PagedList</PackageId>
+    <Product>Z.PagedList</Product>
+    <PackageLicenseFile>LICENSE</PackageLicenseFile>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <Optimize>true</Optimize>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <DocumentationFile>\Z.PagedList\Z.PagedList\Z.PagedList.xml</DocumentationFile>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="..\LICENSE">
+      <Pack>True</Pack>
+      <PackagePath></PackagePath>
+    </None>
+  </ItemGroup>
+
+</Project>

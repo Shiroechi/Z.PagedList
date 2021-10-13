@@ -1,0 +1,44 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<GeneratePackageOnBuild>false</GeneratePackageOnBuild>
+		<PackageProjectUrl>https://github.com/Shiroechi/Z.PagedList</PackageProjectUrl>
+		<RepositoryType>git</RepositoryType>
+		<Version>8.1.0</Version>
+		<AssemblyVersion>8.1.0</AssemblyVersion>
+		<FileVersion>8.1.0</FileVersion>
+		<RepositoryType>git</RepositoryType>
+		<RepositoryUrl>https://github.com/Shiroechi/Z.PagedList.git</RepositoryUrl>
+	</PropertyGroup>
+
+	<PropertyGroup>
+		<TargetFramework>net5.0</TargetFramework>
+		<Product />
+		<Description>Fork from X.PagedList.Mvc.Core without JetBrains Annotations</Description>
+		<PackageLicenseFile>LICENSE</PackageLicenseFile>
+	</PropertyGroup>
+
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+		<Optimize>true</Optimize>
+	</PropertyGroup>
+
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+		<DocumentationFile>\Z.PagedList.Mvc.Core\Z.PagedList.Mvc.Core.xml</DocumentationFile>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<FrameworkReference Include="Microsoft.AspNetCore.App" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<None Include="..\LICENSE">
+			<Pack>True</Pack>
+			<PackagePath></PackagePath>
+		</None>
+	</ItemGroup>
+
+	<ItemGroup>
+	  <ProjectReference Include="..\Z.PagedList\Z.PagedList.csproj" />
+	</ItemGroup>
+
+</Project>
